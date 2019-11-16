@@ -3,7 +3,7 @@
 ### Would you like to know about stones and their metaphysical properties?  Look no futher!  
 Log in to our app to learn about the properties of stones and save your favorites.  Or, just look around to learn more!  
 
-Check out the app [here](https://glacial-journey-69057.herokuapp.com)
+Check out the app [here](https://get-stoned.herokuapp.com/)
 
 ### Technologies Used
 
