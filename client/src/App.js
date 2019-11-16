@@ -11,6 +11,9 @@ import SignupPage from "./pages/SignupPage";
 import Discover from "./pages/Discover";
   
 function App() {
+
+  //put api call here in hooks with state
+
   return (
       <Router>
         <>
