@@ -5,7 +5,7 @@
 
 #signupBtn {
     font-family: bureau-grot-wide, sans-serif !important;
-    background-color: black;
+    background-color: #1b2a49;
 }
 
 #signupBox {
@@ -19,7 +19,11 @@
 }
 
 .innerSignupBox {
+    width: 80%;
     padding: 40px;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
     #signupBtn {
         display: block;
         margin: 20px auto !important;

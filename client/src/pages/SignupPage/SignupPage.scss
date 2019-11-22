@@ -10,14 +10,14 @@
     width: 100vw;
     margin: 0px;
 
-    &-inner {
-        height: 100%;
+    .signup-inner {
+        height: 50vh;
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 50%;
         margin: auto;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         text-align: center;
     }
 }
@@ -27,7 +27,7 @@
     text-align: center;
 }
 .text-primary {
-    color: black !important;
+    color: #1b2a49 !important;
 }
 
 .loginLink {
