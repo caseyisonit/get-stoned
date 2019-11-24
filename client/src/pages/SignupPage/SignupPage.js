@@ -50,7 +50,7 @@ class SignupPage extends Component {
     return (
       <Container fluid id="signupBox">
           <Row>
-            <Col sm={{size: 10, offset: 1}} md={{size: 8, offset: 2}} lg={{size: 4, offset: 4}}>
+            <Col sm={{size: 10, offset: 1}} md={{size: 8, offset: 2}} xl={{size: 4, offset: 4}}>
             <div className="signup-inner">
             <Signup
                   username={this.state.username}
