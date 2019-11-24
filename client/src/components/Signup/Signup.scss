@@ -3,30 +3,44 @@
 @import "../../sass/_form.scss";
 @import "../../sass/_utilities.scss";
 
-#signupBtn {
-    font-family: bureau-grot-wide, sans-serif !important;
-    background-color: #1b2a49;
-}
-
-#signupBox {
-    padding: 90px 200px;
-    font-family: $text-font;
-
-}
-
-.signup-inner {
-    background-color: rgba(255,255,255, 0.6);
-}
-
 .innerSignupBox {
     width: 80%;
-    padding: 40px;
     align-content: center;
     justify-content: center;
-    margin: auto;
+    margin: 40px auto;
     #signupBtn {
+        font-family: bureau-grot-wide, sans-serif !important;
+        background-color: #1b2a49;
         display: block;
         margin: 20px auto !important;
+        padding: 10px 40px;
+    }
+    h1 {
+        padding: 40px;
     }
 }
 
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {
+    
+// }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .innerSignupBox {
+        width: 100%;
+        h1 {
+            padding: 20px;
+        }
+    }
+
+}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}

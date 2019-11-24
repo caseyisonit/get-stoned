@@ -62,6 +62,7 @@ class Signup extends Component {
             <div className="innerSignupBox">
                 
                 <h1 className="x-large" align="center">SIGN UP</h1>
+                <hr></hr>
                 {this.props.message?(
                     <Alert className="animated fadeIn" color="danger">{this.props.message}</Alert>
                 ): (<></>)}

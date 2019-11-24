@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Signup from "../../components/Signup";
 import API from "../../utils/API";
 import "./SignupPage.scss";
-import { Container } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 class SignupPage extends Component {
   state = {
@@ -49,7 +49,9 @@ class SignupPage extends Component {
   render() {
     return (
       <Container fluid id="signupBox">
-          <div className="signup-inner">
+          <Row>
+            <Col sm={{size: 10, offset: 1}} md={{size: 8, offset: 2}} lg={{size: 4, offset: 4}}>
+            <div className="signup-inner">
             <Signup
                   username={this.state.username}
                   password={this.state.password}
@@ -59,6 +61,9 @@ class SignupPage extends Component {
                   message={this.state.message}
                 />
           </div>
+            </Col>
+          </Row>
+          
       </Container>
     );
   }
