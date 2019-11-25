@@ -3,27 +3,29 @@
 @import "../../sass/_form.scss";
 @import "../../sass/_utilities.scss";
 
-#loginBtn {
-    margin: 1.2rem auto;
-    font-family: bureau-grot-wide, sans-serif !important;
-    background-color: black;
-    width: auto;
-    justify-content: center;
-    
-}
-
-#loginBox {
-    padding: 90px 200px;
-    font-family: $text-font;
-    
-}
-
-.signup-inner {
-    background-color: rgba(255,255,255, 0.6);
-}
-
 .innerLoginBox {
-    padding: 40px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin: 40px auto;
+    #loginBtn {
+        font-family: bureau-grot-wide, sans-serif !important;
+        background-color: #1b2a49;
+        display: block;
+        margin: 20px auto !important;
+        padding: 10px 40px;
+        width: auto;
+    }
+    h1 {
+        padding: 40px;
+    }
 }
 
+@media only screen and (max-width: 768px) {
+    .innerSignupBox {
+        h1 {
+            padding: 20px;
+        }
+    }
 
+}

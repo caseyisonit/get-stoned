@@ -7,7 +7,8 @@ function Login(props) {
     return (
         <div className="innerLoginBox">
 
-            <h1 className="x-large" align="center">Log In</h1>
+            <h1 className="x-large" align="center">LOG IN</h1>
+            <hr></hr>
             {props.message ? (
                 <Alert className="animated fadeIn" color="danger">{props.message}</Alert>
             ) : (<></>)}
