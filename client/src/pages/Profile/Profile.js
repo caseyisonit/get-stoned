@@ -82,7 +82,8 @@ class Profile extends Component {
     stoneModalOpen = (event, stone) => {
         event.preventDefault();
         this.setState({
-            modalOpen: true, currentStone: {
+            modalOpen: true, 
+            currentStone: {
                 name: stone.favorite_name,
                 image: stone.favorite_image,
                 chakra: stone.favorite_chakra,
@@ -151,7 +152,7 @@ class Profile extends Component {
                                     isOpen={this.state.modalOpen}
                                     stone={this.state.currentStone}
                                     className="centered"
-                                
+                                    deleteFav={this.deleteFav}
                                 />
 
 

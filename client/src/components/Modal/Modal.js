@@ -31,7 +31,7 @@ class StoneModal extends React.Component {
 
   handleClick = () => {
     if (this.props.stone.name === this.state.favoriteStones.favorite_name) {
-      this.setState({ faveText: "Added to Favorites" })
+      this.setState({ favText: "Added to Favorites" })
     } else {
 
       this.setState({ favText: "Saved to Favorites" })
@@ -52,6 +52,7 @@ class StoneModal extends React.Component {
         .catch(err => console.log(err));
       }  
     };
+
 
 
     render() {
@@ -82,7 +83,8 @@ class StoneModal extends React.Component {
                 <ModalFooter>
                   {this.state.favoriteStones.includes(this.props.stone.name) ? (
 
-                    <a href="/profile"><Button color="primary" className="faveButton">Saved to Favorites</Button></a>
+                    // <a href="/profile"><Button color="primary" className="faveButton">Saved to Favorites</Button></a>
+                    <Button color="primary" className="faveButton" onClick={() => this.props.deleteFav(this.props.stone._id)}>Delete from Favorites</Button>
                   ) : (
                       <Button color="primary" className="faveButton" onClick={this.handleClick}>{this.state.favText}</Button>
 
